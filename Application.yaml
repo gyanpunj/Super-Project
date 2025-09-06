@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: project-k8s
-        image: 381492204839.dkr.ecr.us-east-2.amazonaws.com/super-project:latest
+        image: 299858990049.dkr.ecr.us-east-2.amazonaws.com/super-project:8
         ports:
         - containerPort: 8080  
 
@@ -31,3 +31,4 @@ spec:
   - protocol: TCP
     port: 80
     targetPort: 8080 
+    nodePort: 30080
